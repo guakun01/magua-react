@@ -6,6 +6,9 @@ module.exports = {
   entry: {
     magua: './lib/index.tsx'
   },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.jsx']
+  },
   output: {
     path: path.resolve(__dirname, 'dist/lib'),
     libraryTarget: 'umd',
@@ -20,7 +23,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title:'magua',
+      title: 'magua',
       template: 'index.html',
     })
   ]
