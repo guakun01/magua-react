@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/guakun01/magua-react/issues"
   },
-  "homepage": "https://github.com/guakun01/magua-react#readme"
+  "homepage": "https://github.com/guakun01/magua-react#readme",
+  "devDependencies": {
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
+  }
 }
