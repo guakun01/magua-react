@@ -2,7 +2,8 @@
   "name": "magua-react",
   "version": "1.0.0",
   "description": "UI 库 magua 的 react 版本",
-  "main": "index.js",
+  "main": "dist/lib/magua.js",
+  "types": "dist/lib/index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
