@@ -1,4 +1,7 @@
-import React from 'react'
+import React from 'react';
+import './icons/wechat.svg';
+import './icons/alipay.svg';
+import './icons/baidu.svg';
 
 interface IconProps {
   name: string;
@@ -6,8 +9,12 @@ interface IconProps {
 
 const Icon: React.FunctionComponent<IconProps> = (props) => {
   return (
-    <span>{props.name}</span>
+    <span>
+      <svg>
+        <use xlinkHref={`#${props.name}`} />
+      </svg>
+    </span>
   )
 }
 
-export default Icon
+export default Icon;
